@@ -1,34 +1,23 @@
 package ExerciciosPolimorfismo;
 
-public class Animal {
-	
+public abstract class SuperClasseAnimal implements InterfaceAnimal {
+
 	private String nome;
-	private int idade;
-	
-	
+	private String idade;
+
 	public String getNome() {
 		return nome;
 	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public int getIdade() {
+
+	public String getIdade() {
 		return idade;
 	}
-	public void setIdade(int idade) {
+
+	public void setIdade(String idade) {
 		this.idade = idade;
 	}
-	
-	public void som() {
-		
-	}
-	
-	public void correr() {
-		
-	}
-	
-	public void subir() {
-		
-	}
-	
 }

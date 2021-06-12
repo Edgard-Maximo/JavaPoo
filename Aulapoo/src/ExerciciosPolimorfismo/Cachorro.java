@@ -1,13 +1,23 @@
 package ExerciciosPolimorfismo;
 
-public class Cachorro extends Animal {
+public class Cachorro extends  SuperClasseAnimal implements InterfaceAnimal {
 
-	public void som() {
-		System.out.println("AuauaUAu");
-	}
-			
+	
 	public void correr() {
-		System.out.println("Correndo 10 km......");
+		System.out.println("Meu cachorro corre 10 km......");
+	}
+
+	@Override
+	public void Som() {
+		System.out.println("Ele late assim: AuauaUAu");
+		
+	}
+
+	@Override
+	public void subir() {
+		System.out.println("Meu cachorro sempre sobe na minha cama, me deixa bravo-----> grrr");
+		
 	}
 	
-}
+	
+	}
